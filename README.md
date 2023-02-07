@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/554a2a42a50326a0cc482.jpg">
+  <img src="https://telegra.ph//file/22f35f48a7f9900d555be.jpg">
 </p>
 
 <h4><p align="center"> ZIKA ROBOT </p></h4>
