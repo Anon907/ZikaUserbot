@@ -1,0 +1,51 @@
+{
+  "name": "Zika-Userbot",
+  "description": "[Zika-Userbot] is a modular telegram user that runs on Python3 with a pyrogram library. Powered by Zika.",
+  "logo": "https://telegra.ph//file/22f35f48a7f9900d555be.jpg",
+  "stack": "heroku-22",
+  "env": {
+    "STRING_SESSION1": {
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/ramsupportt » Lalu ketik #string",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Masukan Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": false
+    },
+    "BOT_TOKEN": {
+      "description": "Buat Bot Di @botfather Masukan Bot Token Untuk Menghidupkan inline Bot",
+      "required": true
+    },
+    "OPENAI__API_KEY": {
+      "description": "Masukan ApiKey Jika Ingin Menghidupkan OpenAi https://beta.openai.com",
+      "required": false
+    }
+  },
+    "HEROKU_APP_NAME": {
+      "description": "Masukan Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": false
+    },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
