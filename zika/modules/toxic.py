@@ -27,7 +27,7 @@ async def ngejamet(client: Client, message: Message):
         return await edit_or_reply(
             message, "**Jangan Coba Coba Roasting Pembuat Gua lah Kontol!**"
         )
-    ling = await edit_or_reply(message, "**WOII**")
+    zika = await edit_or_reply(message, "**WOII**")
     await asyncio.sleep(1.5)
     await zika.edit("**WOI MANUSIA HINA**")
     await asyncio.sleep(1.5)
@@ -61,7 +61,7 @@ async def globalfake(client: Client, message: Message):
         return await edit_or_reply(
             message, "**Lo GaBisa Gban dia ngentod!!!**"
         )
-    ling = await edit_or_reply(message, f"Memulai Proses Global Banned [{user.first_name}](tg://user?id={user.id})")
+    zika = await edit_or_reply(message, f"Memulai Proses Global Banned [{user.first_name}](tg://user?id={user.id})")
     await asyncio.sleep(3)
     await zika.edit("`Gbanning🔄`")
     await asyncio.sleep(5)
