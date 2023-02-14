@@ -23,7 +23,7 @@ def _netcat(host, port, content):
     s.close()
 
 def restart():
-    os.execvp(sys.executable, [sys.executable, "-m", "ling"])
+    os.execvp(sys.executable, [sys.executable, "-m", "zika"])
 
 async def is_heroku():
     return "heroku" in socket.getfqdn()
