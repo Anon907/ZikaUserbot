@@ -106,7 +106,7 @@ async def nearest_dc(client: Client, message: Message):
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ling = await edit_or_reply(message, "**Mengecek Sinyal...**")
+    zika = await edit_or_reply(message, "**Mengecek Sinyal...**")
     await zika.edit("**20% ██▒▒▒▒▒▒▒▒**")
     await zika.edit("**40% ████▒▒▒▒▒▒**")
     await zika.edit("**60% ██████▒▒▒▒**")
