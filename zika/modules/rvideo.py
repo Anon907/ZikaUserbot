@@ -1,4 +1,4 @@
-from ling.helpers.basic import edit_or_reply
+from zika.helpers.basic import edit_or_reply
 import asyncio
 import os
 import time
