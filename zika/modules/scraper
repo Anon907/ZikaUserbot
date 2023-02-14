@@ -1,7 +1,7 @@
 from os import remove
 from re import findall
 from pyrogram import Client, filters
-from ling.helpers.adminHelpers import DEVS
+from zika.helpers.adminHelpers import DEVS
 
 
 _SCRTXT = """
