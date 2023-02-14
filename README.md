@@ -11,7 +11,7 @@
 <a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.13-white?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
 <a href="https://docs.pyrogram.dev"> <img src="https://img.shields.io/badge/Pyrogram-2.0.97-red?&style=flat-round&logo=github" alt="Pyrogram" /> </a>
 <a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.9.16-purple?&style=flat-round&logo=python" alt="Python" /> </a><br>
-<a href="https://GitHub.com/Anon907/ZikaUserbot"> <img src="https://img.shields.io/badge/Maintained-Ling-yellow.svg" alt="Maintenance" /> </a><br>
+<a href="https://GitHub.com/Anon907/ZikaUserbot"> <img src="https://img.shields.io/badge/Maintained-Zika-yellow.svg" alt="Maintenance" /> </a><br>
 <a href="https://github.com/Anon907/ZikaUserbot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
 <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
 </p>
