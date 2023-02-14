@@ -4,9 +4,9 @@ from pyrogram import idle
 from uvloop import install
 
 from config import BOT_VER, CMD_HANDLER
-from ling import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots, app, ids
-from ling.split.misc import create_botlog, git, heroku
-from ling.modules import ALL_MODULES
+from zika import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots, app, ids
+from zika.split.misc import create_botlog, git, heroku
+from zika.modules import ALL_MODULES
 
 MSG_ON = """
 ✔️ **Zika Userbot Activated**
