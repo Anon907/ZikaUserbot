@@ -17,7 +17,7 @@ from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
 from config import BRANCH, GIT_TOKEN, HEROKU_API_KEY, HEROKU_APP_NAME, REPO_URL
-from ling import LOGGER
+from zika import LOGGER
 
 HAPP = None
 
