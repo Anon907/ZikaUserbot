@@ -1,12 +1,3 @@
-# Credits: @mrismanaziz
-# Copyright (C) 2022 Pyro-ManUserbot
-# null
-# This file is a part of < https://github.com/mrismanaziz/PyroMan-Userbot/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
-#
-# t.me/SharingUserbot & t.me/Lunatic0de
-
 import asyncio
 import os
 import time
@@ -28,7 +19,6 @@ from .updater import restart
 from config import *
 from zika import CMD_HELP, StartTime, app
 
-from .help from add_command_help
 
 modules = CMD_HELP
 alive_logo = (
@@ -38,7 +28,7 @@ emoji = gvarstatus("ALIVE_EMOJI") or "🤖"
 alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "Hey bro, I am Zika."
 
 
-@Client.on_message(filters.command(["gue", cmd], cmd) & filters.me)
+@Client.on_message(filters.command("gue", cmd) & filters.me)
 async def alive(client: Client, message: Message):
     xx = await edit_or_reply(message, "🤖")
     await asyncio.sleep(2)
@@ -47,12 +37,11 @@ async def alive(client: Client, message: Message):
     man = (
         f"──「 **[Zɪᴋᴀ Uꜱᴇʀʙᴏᴛ](https://github.com/Anon907/ZikaUserbot)** 」──\n\n"
         f"╼┅━━━━━━━━╍━━━━━━━━┅╾ \n"
-        f"{emoji} <b>ʙᴏᴛ ᴠᴇʀsɪᴏɴ :</b> <code>{BOT_VER}</code> \n"
-        f"{emoji} <b>ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :</b> <code>{python_version()}</code> \n"
-        f"{emoji} <b>ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :</b> <code>{versipyro}</code> \n"
-        f"╼┅━━━━━━━━╍━━━━━━━━┅╾ \n"
-        f"➠ Mʏ Mᴀꜱᴛᴇʀ : [•Cʟɪᴄᴋ•](tg://user?id={client.me.id})\n\n"
-        f"    **[Sᴜᴘᴘᴏʀᴛ](https://t.me/{GROUP})** | **[Cʜᴀɴɴᴇʟ](https://t.me/{CHANNEL})** | **[Oᴡɴᴇʀ](t.me/Anon907)**"
+        f"{emoji} <b>ʙᴏᴛ :</b> <code>{BOT_VER}</code> \n"
+        f"{emoji} <b>ᴘʏᴛʜᴏɴ :</b> <code>{python_version()}</code> \n"
+        f"{emoji} <b>ᴘʏʀᴏɢʀᴀᴍ :</b> <code>{versipyro}</code> \n"
+        f"╼┅━━━━━━━━╍━━━━━━━━┅╾ \n\n"
+        f"    **[Sᴜᴘᴘᴏʀᴛ](https://t.me/{GROUP})** | **[Cʜᴀɴɴᴇʟ](https://t.me/{CHANNEL})** | **[Oᴡɴᴇʀ](t.me/excute7)**"
     )
     try:
         await asyncio.gather(
@@ -86,13 +75,13 @@ async def module_help(client: Client, message: Message):
                 ),
             )
         except BaseException as e:
-            print(f"{e}"
+            print(f"{e}")
 
 
 @Client.on_message(filters.command("setalivelogo", cmd) & filters.me)
 async def setalivelogo(client: Client, message: Message):
     try:
-        import ling.helpers.SQL.globals as sql
+        import zika.helpers.SQL.globals as sql
     except AttributeError:
         await message.edit("**Running on Non-SQL mode!**")
         return
@@ -129,7 +118,7 @@ async def setalivelogo(client: Client, message: Message):
 @Client.on_message(filters.command("setalivetext", cmd) & filters.me)
 async def setalivetext(client: Client, message: Message):
     try:
-        import ling.helpers.SQL.globals as sql
+        import zika.helpers.SQL.globals as sql
     except AttributeError:
         await message.edit("**Running on Non-SQL mode!**")
         return
@@ -156,7 +145,7 @@ async def setalivetext(client: Client, message: Message):
 @Client.on_message(filters.command("setemoji", cmd) & filters.me)
 async def setemoji(client: Client, message: Message):
     try:
-        import ling.helpers.SQL.globals as sql
+        import zika.helpers.SQL.globals as sql
     except AttributeError:
         await message.edit("**Running on Non-SQL mode!**")
         return
@@ -174,26 +163,3 @@ async def setemoji(client: Client, message: Message):
     sql.addgvar("ALIVE_EMOJI", emoji)
     await Man.edit(f"**Berhasil Mengcustom EMOJI ALIVE Menjadi** {emoji}")
     restart()
-
-
-add_command_help(
-    "alive",
-    [
-        [
-            "alive",
-            "Untuk memeriksa userbot anda berfungsi atau tidak",
-        ],
-        [
-            "setalivelogo <link telegraph atau reply ke foto/video/gif>",
-            "Untuk mengcustom alive logo userbot anda",
-        ],
-        [
-            "setalivetext <text>",
-            "Untuk mengcustom alive text userbot anda",
-        ],
-        [
-            "setemoji <emoji>",
-            "Untuk mengcustom emoji alive userbot anda",
-        ],
-    ],
-)
